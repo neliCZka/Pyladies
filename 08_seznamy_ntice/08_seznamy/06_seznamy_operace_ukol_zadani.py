@@ -12,13 +12,14 @@ zaznamy = ['pepa novak', 'Jiri Sladek', 'Ivo navratil', 'jan Polednik']
 def vyber_chybne_zaznamy(zaznamy):
     pass
 
-# print vyber_chybne_zaznamy(zaznamy)
+#print(vyber_chybne_zaznamy(zaznamy))
 
 def vyber_spravne_zaznamy(zaznamy):
     pass
-# print vyber_spravne_zaznamy(zaznamy)
+
+#print(vyber_spravne_zaznamy(zaznamy))
 
 def oprav_zaznamy(zaznamy):
     pass
 
-# print oprav_zaznamy(zaznamy)
+#print(oprav_zaznamy(zaznamy))

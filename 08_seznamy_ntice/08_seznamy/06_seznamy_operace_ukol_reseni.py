@@ -11,7 +11,7 @@ def vyber_chybne_zaznamy(zaznamy):
             chybne_zaznamy.append(zaznam)
     return chybne_zaznamy
 
-print vyber_chybne_zaznamy(zaznamy)
+print(vyber_chybne_zaznamy(zaznamy))
 
 def vyber_spravne_zaznamy(zaznamy):
     spravne_zaznamy = []
@@ -22,7 +22,7 @@ def vyber_spravne_zaznamy(zaznamy):
         if not jmeno[0].islower() and not prijmeni[0].islower():
             spravne_zaznamy.append(zaznam)
     return spravne_zaznamy
-print vyber_spravne_zaznamy(zaznamy)
+print(vyber_spravne_zaznamy(zaznamy))
 
 def oprav_zaznamy(zaznamy):
     opravene_zaznamy = []
@@ -36,6 +36,6 @@ def oprav_zaznamy(zaznamy):
             opravene_zaznamy.append(zaznam)
     return opravene_zaznamy
 
-print oprav_zaznamy(zaznamy)
+print(oprav_zaznamy(zaznamy))
 
 

@@ -14,7 +14,7 @@ sezerou = '10','12','2'
 
 def vypis_plemena(ntice):
     for plemeno in ntice:
-        print plemeno
+        print(plemeno)
 
 #vypis_plemena('labik','ovcak','jezevcik')
 # Jooo, chudak funkce potrebuje nejak vedet, co jsou jednotlive argumenty a co uz jsou hodnoty, ktere se ji snazime predat
@@ -26,13 +26,13 @@ def rekni_mi_kolik_sezere(plemeno):
     krmivo = sezerou[index]
     return plemeno, krmivo
 
-#print rekni_mi_kolik_sezere('ovcak')
+#print(rekni_mi_kolik_sezere('ovcak'))
 #plemeno, krmivo = rekni_mi_kolik_sezere('ovcak')
-#print '{} sezere {} kg krmiva za mesic'.format(plemeno,krmivo)
+#print('{} sezere {} kg krmiva za mesic'.format(plemeno,krmivo))
 
 def rekni_mi_kolik_sezere_kazde_plemeno(plemena,sezerou):
     for plemeno, krmivo in zip(plemena,sezerou):
-        print '{} sezere {} kg krmiva za mesic'.format(plemeno, krmivo)
+        print('{} sezere {} kg krmiva za mesic'.format(plemeno, krmivo))
 
 #rekni_mi_kolik_sezere_kazde_plemeno(plemena_psu,sezerou)
 

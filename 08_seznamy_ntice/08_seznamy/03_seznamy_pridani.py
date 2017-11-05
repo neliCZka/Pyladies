@@ -12,8 +12,8 @@ plemena_psu = ['labik','husky','ovcak','staffik']
 
 def pridej_plemeno(seznam):
     seznam.append('samojed')
-    print seznam
-# pridej_plemeno(plemena_psu)
+    print(seznam)
+#pridej_plemeno(plemena_psu)
 
 # UKOL 03: Pridej dalsi plemeno (napr. jezevcik), nemusis ve funkci
 
@@ -23,7 +23,7 @@ def pridej_plemeno(seznam):
 # Pridame par dalsich plemen
 def pridej_vic_plemen(seznam,hodnoty):
     seznam.extend('bernak','malamut')
-    print seznam
+    print(seznam)
 #pridej_vic_plemen(plemena_psu)
 
 # Jezismarja, tohle je nejaka blbost, vzdyt to nefunguje.
@@ -31,13 +31,13 @@ def pridej_vic_plemen(seznam,hodnoty):
 
 def pridej_vic_plemen(seznam):
     seznam.extend(['bernak','malamut'])
-    print seznam
-# pridej_vic_plemen(plemena_psu)
+    print(seznam)
+#pridej_vic_plemen(plemena_psu)
 
 # A co kdyz budeme chtit ale pridat samotnej seznam do seznamu?
 # Tak pouzijeme append :)
 
 def pridej_seznam_do_seznamu(seznam):
     seznam.append(['rotwik','dobrman'])
-    print seznam
+    print(seznam)
 #pridej_seznam_do_seznamu(plemena_psu)
