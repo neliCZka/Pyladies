@@ -17,6 +17,7 @@ def zmen_ovcaka_za_vlcaka(seznam):
 
 
 # A nam se vlastne nelibi ani ten staffik, dejme ho pryc.
+# Funkce del smaze hodnotu z daneho indexu, nebo klidne i vic hodnot, pokud zadame rozsah jako [2:4]
 
 def zrus_staffika(seznam):
     del seznam[3]
@@ -24,6 +25,7 @@ def zrus_staffika(seznam):
 #zrus_staffika(plemena_psu)
 
 # A uz se nam nelibi ani vlcak, pryc s nim!
+# Funkce pop() vyhodi posledni prvek ze seznamu
 
 def zrus_i_vlcaka(seznam):
     seznam.pop()

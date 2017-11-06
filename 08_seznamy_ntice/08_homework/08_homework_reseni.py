@@ -18,7 +18,7 @@ def filter_zacinajici(seznam):
         if jmeno[0] == 'k':
             filrovane_pole.append(jmeno)
     return filrovane_pole
-print(filter_zacinajici(domaci_zvirata))
+#print(filter_zacinajici(domaci_zvirata))
 
 #ukol 3
 def slovo_v_poli(slovo,pole):

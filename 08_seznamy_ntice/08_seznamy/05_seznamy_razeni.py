@@ -26,7 +26,6 @@ def serad_seznam_opacne(seznam):
     seznam.sort(reverse=True)
     print('seznam serazeny od Z: {}'.format(seznam))
 #serad_seznam_opacne(plemena_psu)
-
 #print('i funkce sorted() umi radit opacne: {}'.format(sorted(plemena_psu,reverse=True)))
 
 # to stejne muzeme udelat i s cisly v seznamu

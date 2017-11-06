@@ -30,11 +30,19 @@ def rekni_mi_kolik_sezere(plemeno):
 #plemeno, krmivo = rekni_mi_kolik_sezere('ovcak')
 #print('{} sezere {} kg krmiva za mesic'.format(plemeno,krmivo))
 
+# Hodnoty z dvou tuplu se daji kombinovat mnohem elegantneji a sice pouzitim funkce zip()
+# funkce zip funguje podobne jako zip na mikine, takze spoji hodnoty z obou ntic na stejne pozici
+
 def rekni_mi_kolik_sezere_kazde_plemeno(plemena,sezerou):
     for plemeno, krmivo in zip(plemena,sezerou):
         print('{} sezere {} kg krmiva za mesic'.format(plemeno, krmivo))
 
 #rekni_mi_kolik_sezere_kazde_plemeno(plemena_psu,sezerou)
 
+# Enumerate proiteruje list nebo i tuple s jeho indexy i hodnotami
+def vypis_index_kazdeho_psa(seznam):
+    for index,plemeno in enumerate(seznam):
+       print('na indexu {} je plemeno {}'.format(index, plemeno))
 
+#vypis_index_kazdeho_psa(plemena_psu)
 

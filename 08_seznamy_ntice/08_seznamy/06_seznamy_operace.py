@@ -4,14 +4,14 @@ plemena_psu = ['labik','husky','ovcak','staffik','jezevcik']
 kolik_sezerou_kg_za_mesic = [12,8,10,8,2]
 
 # Se seznamy muzeme provadet spoustu operaci, ktere uz zname napriklad od retezcu.
-# Muzeme si jim posvitit na delku (pocet zaznamu v listu), muzeme je nasobit, muzeme je prochazet v cyklu, muzeme je i tvorit v cyklu,
-# muzeme je rozdelit atd.
+# Muzeme si jim posvitit na delku (pocet zaznamu v listu), muzeme je nasobit, muzeme je prochazet v cyklu,
+# muzeme je i tvorit v cyklu, muzeme je rozdelit atd.
 
 def zdvojnasob_seznam(seznam1,seznam2):
     print('v tomto pripade to nedava moc smysl, ale sezamy se daji nasobit stejne jako retezce a navic se daji secist s dalsim seznamem: {}'.format((seznam1*2)+seznam2))
 #zdvojnasob_seznam(plemena_psu,kolik_sezerou_kg_za_mesic)
 
-# ta delka se fakt hodi, protoze se podle ni casto muze iterovat treba v cyklu,  takze si ji ukazeme
+# delka se fakt hodi, protoze se podle ni casto muze iterovat treba v cyklu,  takze si ji ukazeme
 
 def dej_mi_delku_seznamu(seznam):
     print('pocet prvku v seznamu je: {}'.format(len(seznam)))
@@ -35,7 +35,8 @@ def pozor_na_jezevciky(seznam):
 #pozor_na_jezevciky(plemena_psu)
 #pozor_na_jezevciky(plemena)
 
-# stejne jako pro prevod na retezce funguje funkce str() a pro prevod na cela cisla funkce int(), mame neco podobneho i pro listy
+# stejne jako pro prevod na retezce funguje funkce str() a pro prevod na cela cisla funkce int(),
+# mame neco podobneho i pro listy
 
 def udelej_mi_z_toho_list(neco_z_ceho_chceme_list):
     novy_list = list(neco_z_ceho_chceme_list)
@@ -45,8 +46,8 @@ def udelej_mi_z_toho_list(neco_z_ceho_chceme_list):
 #udelej_mi_z_toho_list(range(20))
 #udelej_mi_z_toho_list(100)
 
-# fuuu, to posledni nejak nevyslo, je to proto, ze list muzeme udelat jen z neceho, pres co muzeme iterovat - z neceho, co muze projit
-# for cyklus a rozsekat to na mensi jednotky...u samotneho jednoho cisla to nejde
+# fuuu, to posledni nejak nevyslo, je to proto, ze list muzeme udelat jen z neceho, pres co muzeme iterovat -
+# z neceho, co muze projit for cyklus a rozsekat to na mensi jednotky...u samotneho jednoho cisla to nejde
 
 def rekni_mi_kolik_kterej_sezere():
     kolik_ktery_sezere = []
@@ -61,9 +62,8 @@ def rekni_mi_kolik_kterej_sezere():
 
 def vrat_mi_seznam_slov(retezec):
     return retezec.split()
-#print vrat_mi_seznam_slov('Je to asi trosku divny, ale z retezce se proste da udelat seznam znaku celkem jednoduse.')
-
 slova = vrat_mi_seznam_slov('Je to asi trosku divny, ale z retezce se proste da udelat seznam znaku celkem jednoduse.')
+#print(slova)
 
 def to_by_stacilo_dej_mi_zase_vetu(slova):
     print(' '.join(slova))
@@ -71,6 +71,7 @@ def to_by_stacilo_dej_mi_zase_vetu(slova):
 
 # seznamy se daji dobre michat i s random funkcemi, tzn. kdyz uz mame seznam vic hodnot, muzeme je nahodne zprehazet
 # nebo z nich muzeme vybirat nahodne prvky
+# musime si ale naimportovat modul random (obvykle se dava nahoru do souboru, mam ho tu, aby byl videt)
 
 import random
 
@@ -84,7 +85,11 @@ def zprehazej_mi_pejsky(plemena_psu):
     print(plemena_psu)
 #zprehazej_mi_pejsky(plemena_psu)
 
-# rekneme, ze mali psi jsou prvni podseznam, stredni ten druhy a velci jsou posledni
+# Aby toho nebylo malo, seznamy muzou obsahovat dalsi seznamy
+# a neni to zadna velka veda, pracuje se s nimi stale celkem normalne
+# pristupujeme k hodnotam pres indexy, iterujeme pres for cyklus,...
+
+# rekneme, ze mali psi jsou prvni podseznam, stredni psi ten druhy a velci jsou posledni
 
 plemena_podle_velikosti = [['jezevcik','jack-russel','shiba-inu'],['bigl','borderka','kokrspanel'],['labik','doga','ovcak']]
 
@@ -97,3 +102,30 @@ def vypis_mi_prvniho_velkeho_psa(seznam):
     print(velci_psi[0])
     # print(seznam[2][0])
 #vypis_mi_prvniho_velkeho_psa(plemena_podle_velikosti)
+
+
+# UKOL - Dopln kod, aby se vypsala tabulka plna cisel nasobilky
+# Napr.: 3. sloupec a 5. radek obsahuje cislo 15
+
+def vytvor_tabulku(velikost=11):
+    #TODO: vytvor pole radku
+    for radek in range(velikost):
+        #TODO: vytvor radek (pole cisel)
+        for sloupec in range(velikost):
+            pass  #TODO: tenhle pass smaz az tu budes mit neco lepsiho :) (viz. nasledujici radek)
+            #TODO: pridej do radku (nezapomen, ze radek je seznam cisel) hodnotu (radek * sloupec)
+        #TODO: pridej radek do pole radku
+    #TODO: vrat pole radku
+
+#nasobilka = vytvor_tabulku()
+
+# Vypsání celé tabulky
+#for radek in nasobilka:
+#    for cislo in radek:
+#        print(cislo, end=' ')
+#    print()
+
+# Procpak jsme vlastne zadali velikost tabulky zrovna 11?
+
+#TODO: vypis hodnotu 2*3 z nasobilky
+#TODO: vypis hodnotu 4*5 z nasobilky
