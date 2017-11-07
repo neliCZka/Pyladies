@@ -27,7 +27,8 @@ def pridej_vic_plemen(seznam,hodnoty):
 #pridej_vic_plemen(plemena_psu)
 
 # Jezismarja, tohle je nejaka blbost, vzdyt to nefunguje.
-# Nefunguje to proto, ze extend bere jako parametr list hodnot a tento list "rozseka" na jednotlive hodnoty a prave ty prida do puvodniho seznamu.
+# Nefunguje to proto, ze funkce extend bere jen 1 argument, ale ted si mysli, ze ji predavame 2.
+# Pokud ji chceme predat list, musime ji to dat vedet pomoci hranatych zavorek []
 
 def pridej_vic_plemen(seznam):
     seznam.extend(['bernak','malamut'])

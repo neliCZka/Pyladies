@@ -23,6 +23,9 @@ plemena_psu = ['labik','husky','ovcak','staffik']
 # No jo, je to tim, ze slice je exclusive - nefunguje jako "vcetne", takze pokud chceme vsechny az po treti plemeno VCETNE, musime pridat +1
 #print(plemena_psu[:3])
 
+# Dokonce muzeme zjistit i pozici, na ktere se konkretni hodnota (pes) nachazi
+
+#print('husky se nachazi na indexu:{}'.format(plemena_psu.index('husky')))
 
 # Obcas muzeme potrebovat pristupovat k hodnote i indexu soucasne, i to nam Python umoznuje
 # Tak jo, zkusime to asi takhle?
