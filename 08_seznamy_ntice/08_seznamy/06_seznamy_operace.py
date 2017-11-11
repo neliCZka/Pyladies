@@ -108,24 +108,25 @@ def vypis_mi_prvniho_velkeho_psa(seznam):
 # Napr.: 3. sloupec a 5. radek obsahuje cislo 15
 
 def vytvor_tabulku(velikost=11):
-    #TODO: vytvor pole radku
-    for radek in range(velikost):
-        #TODO: vytvor radek (pole cisel)
-        for sloupec in range(velikost):
-            pass  #TODO: tenhle pass smaz az tu budes mit neco lepsiho :) (viz. nasledujici radek)
-            #TODO: pridej do radku (nezapomen, ze radek je seznam cisel) hodnotu (radek * sloupec)
-        #TODO: pridej radek do pole radku
-    #TODO: vrat pole radku
+    pole_radku = []
+    for cislo_v_radku in range(velikost):
+        radek = []
+        for cislo_v_sloupci in range(velikost):
+            radek.append(cislo_v_radku * cislo_v_sloupci)
+        pole_radku.append(radek)
+    return pole_radku
 
-#nasobilka = vytvor_tabulku()
+nasobilka = vytvor_tabulku()
 
 # Vypsání celé tabulky
-#for radek in nasobilka:
-#    for cislo in radek:
-#        print(cislo, end=' ')
-#    print()
+for radek in nasobilka:
+   for cislo in radek:
+       print(cislo, end=' ')
+   print()
 
 # Procpak jsme vlastne zadali velikost tabulky zrovna 11?
 
 #TODO: vypis hodnotu 2*3 z nasobilky
+print(nasobilka[2][3])
 #TODO: vypis hodnotu 4*5 z nasobilky
+print(nasobilka[4][5])
